@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Карточка товара</title>
+</head>
+<div>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 header__mobile">
+                    <img class="header__logo" src="img/logo.svg" alt="">
+                    <div class="modal-catalog__search modal-catalog__search_mobile">
+                        <form class="modal-catalog__search__form" action="#">
+                            <input class="modal-catalog__search__input" type="text" placeholder="Поиск по каталогу">
+                            <button type="send" class="modal-search">
+                                <svg class="modal-catalog__search__icon">
+                                    <use xlink:href="img/sprite.svg#modal-search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <button class="modal-catalog__btn__menu-mobile">
+                            <svg class="modal-catalog__close__icon">
+                                <use xlink:href="img/sprite.svg#menu-mobile"></use>
+                            </svg>
+                            <svg class="modal-catalog__close__icon modal-catalog__close__icon_close">
+                                <use xlink:href="img/sprite.svg#menu_mobile_close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-11">
+                    <div class="header__top-box">
+                        <div class="header__top__location">
+                            <div class="header__top__city">
+                                <svg class="header__top__icon">
+                                    <use xlink:href="img/sprite.svg#location"></use>
+                                </svg>
+                                <div class="header__top__city__box">
+                                    <div class="header__top__title">Санкт-Петербург</div>
+                                    <div class="header__top__change">Изменить</div>
+                                </div>
+                            </div>
+                            <div class="header__top__contacts">
+                                <svg class="header__top__icon">
+                                    <use xlink:href="img/sprite.svg#phone"></use>
+                                </svg>
+                                <a class="header__top__title" href="#">+7 (495) 150-77-97</a>
+                            </div>
+                            <div class="header__top__contacts">
+                                <svg class="header__top__icon">
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                </svg>
+                                <a class="header__top__title" href="#">zakaz@dsk-stolica.ru</a>
+                            </div>
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list__items menu__list__items_mobile">
+                                    <a class="menu__list__link" href="#">Каталог жби</a>
+                                    <button class="menu__list__items__btn">
+                                        <svg class="menu__list__items__btn__icon">
+                                            <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <div class="menu__list__items__children_one">
+                                    <li class="menu__list__items__children_one__items">
+                                        <button class="menu__list__items__btn">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                        <a class="menu__list__items__children_one__items__link" href="#">Назад</a>
+                                    </li>
+                                    <li class="menu__list__items__children_one__col">
+                                        <div class="category__items">
+                                            <div class="category__items__box">
+                                                <svg class="category__items__box__icon">
+                                                    <use xlink:href="img/sprite.svg#private-house"></use>
+                                                </svg>
+                                            </div>
+                                            <a href="#" class="category__items__title">Частное домостроение</a>
+                                        </div>
+                                        <button class="menu__list__items__col">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="menu__list__items__children_one__col">
+                                        <div class="category__items">
+                                            <div class="category__items__box">
+                                                <svg class="category__items__box__icon">
+                                                    <use xlink:href="img/sprite.svg#private-house"></use>
+                                                </svg>
+                                            </div>
+                                            <a href="#" class="category__items__title">Дорожное строительство</a>
+                                        </div>
+                                        <button class="menu__list__items__col">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="menu__list__items__children_one__col">
+                                        <div class="category__items">
+                                            <div class="category__items__box">
+                                                <svg class="category__items__box__icon">
+                                                    <use xlink:href="img/sprite.svg#engineer"></use>
+                                                </svg>
+                                            </div>
+                                            <a href="#" class="category__items__title">Инженерное строительство</a>
+                                        </div>
+                                        <button class="menu__list__items__col">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="menu__list__items__children_one__col">
+                                        <div class="category__items">
+                                            <div class="category__items__box">
+                                                <svg class="category__items__box__icon">
+                                                    <use xlink:href="img/sprite.svg#office"></use>
+                                                </svg>
+                                            </div>
+                                            <a href="#" class="category__items__title">Жилищное строительство</a>
+                                        </div>
+                                        <button class="menu__list__items__col">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="menu__list__items__children_one__col">
+                                        <div class="category__items">
+                                            <div class="category__items__box">
+                                                <svg class="category__items__box__icon">
+                                                    <use xlink:href="img/sprite.svg#pipes"></use>
+                                                </svg>
+                                            </div>
+                                            <a href="#" class="category__items__title">Водопропускные трубы</a>
+                                        </div>
+                                        <button class="menu__list__items__col">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="menu__list__items__children_one__col">
+                                        <div class="category__items">
+                                            <div class="category__items__box">
+                                                <svg class="category__items__box__icon">
+                                                    <use xlink:href="img/sprite.svg#Industrial"></use>
+                                                </svg>
+                                            </div>
+                                            <a href="#" class="category__items__title">Промышленное строительство</a>
+                                        </div>
+                                        <button class="menu__list__items__col">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="menu__list__items__children_one__col">
+                                        <div class="category__items category__items_last-child">
+                                            <div class="category__items__box">
+                                                <svg class="category__items__box__icon">
+                                                    <use xlink:href="img/sprite.svg#atomka"></use>
+                                                </svg>
+                                            </div>
+                                            <a href="#" class="category__items__title">Энергетическое строительство</a>
+                                        </div>
+                                        <button class="menu__list__items__col">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="menu__list__items__children_one__col">
+                                        <div class="category__items category__items_last-child">
+                                            <div class="category__items__box">
+                                                <svg class="category__items__box__icon">
+                                                    <use xlink:href="img/sprite.svg#train"></use>
+                                                </svg>
+                                            </div>
+                                            <a href="#" class="category__items__title">Железнодорожное строительство</a>
+                                        </div>
+                                        <button class="menu__list__items__col">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </div>
+                                <div class="menu__list__items__children_two">
+                                    <li class="menu__list__items__children_one__items">
+                                        <button class="menu__list__items__btn">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                        <a class="menu__list__items__children_one__items__link" href="#">Назад</a>
+                                    </li>
+                                    <li class="menu__list__items__children_two__items">
+                                        <a class="menu__list__link" href="#">Плиты перекрытия</a>
+                                        <button class="menu__list__items__btn">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="menu__list__items__children_two__items">
+                                        <a class="menu__list__link" href="#">Заборы ЖБИ</a>
+                                        <button class="menu__list__items__btn">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="menu__list__items__children_two__items">
+                                        <a class="menu__list__link" href="#">Лестничные марши</a>
+                                        <button class="menu__list__items__btn">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="menu__list__items__children_two__items">
+                                        <a class="menu__list__link" href="#">Фундаментные блоки</a>
+                                        <button class="menu__list__items__btn">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="menu__list__items__children_two__items">
+                                        <a class="menu__list__link" href="#">Перемычки железобетонные</a>
+                                        <button class="menu__list__items__btn">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </div>
+                                <div class="menu__list__items__children_three">
+                                    <li class="menu__list__items__children_one__items">
+                                        <button class="menu__list__items__btn">
+                                            <svg class="menu__list__items__btn__icon">
+                                                <use xlink:href="img/sprite.svg#menu-mobile-right"></use>
+                                            </svg>
+                                        </button>
+                                        <a class="menu__list__items__children_one__items__link" href="#">Назад</a>
+                                    </li>
+                                    <li class="menu__list__items__children_two__items">
+                                        <a class="menu__list__link" href="#">Плиты ПК</a>
+                                    </li>
+                                    <li class="menu__list__items__children_two__items">
+                                        <a class="menu__list__link" href="#">Плиты ПК</a>
+                                    </li>
+                                    <li class="menu__list__items__children_two__items">
+                                        <a class="menu__list__link" href="#">Плиты ПК</a>
+                                    </li>
+                                    <li class="menu__list__items__children_two__items">
+                                        <a class="menu__list__link" href="#">Плиты ПК</a>
+                                    </li>
+                                    <li class="menu__list__items__children_two__items">
+                                        <a class="menu__list__link" href="#">Плиты ПК</a>
+                                    </li>
+                                </div>
+                                <li class="menu__list__items">
+                                    <a class="menu__list__link" href="#">О компании</a>
+                                </li>
+                                <li class="menu__list__items">
+                                    <a class="menu__list__link" href="#">Новости</a>
+                                </li>
+                                <li class="menu__list__items menu__list__items_mobile">
+                                    <a class="menu__list__link" href="#">Производство ЖБИ по индивидуальным чертежам заказчика</a>
+                                </li>
+                                <li class="menu__list__items">
+                                    <a class="menu__list__link" href="#">Отзывы</a>
+                                </li>
+                                <li class="menu__list__items menu__list__items_mobile">
+                                    <a class="menu__list__link" href="#">Вакансии</a>
+                                </li>
+                                <li class="menu__list__items">
+                                    <a class="menu__list__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="menu__mobile__btn">
+                                <a class="header__btn__box menu__mobile__btn_box" href="#">
+                                    <svg class="header__btn__box__icon">
+                                        <use xlink:href="img/sprite.svg#person"></use>
+                                    </svg>
+                                    <div class="header__btn__box__title">Войти</div>
+                                </a>
+                                <a class="header__btn__box menu__mobile__btn_box" href="#">
+                                    <svg class="header__btn__box__icon">
+                                        <use xlink:href="img/sprite.svg#favorite"></use>
+                                    </svg>
+                                    <div class="header__btn__box__title">Избранное</div>
+                                </a>
+                                <a class="header__btn__box menu__mobile__btn_box" href="#">
+                                    <svg class="header__btn__box__icon">
+                                        <use xlink:href="img/sprite.svg#shopping"></use>
+                                    </svg>
+                                    <div class="header__btn__box__title">Корзина</div>
+                                </a>
+                                <div class="header__top__city">
+                                    <svg class="header__top__icon">
+                                        <use xlink:href="img/sprite.svg#location"></use>
+                                    </svg>
+                                    <div class="header__top__city__box">
+                                        <div class="header__top__title">Санкт-Петербург</div>
+                                        <div class="header__top__change">Изменить</div>
+                                    </div>
+                                </div>
+                                <div class="header__top__contacts">
+                                    <svg class="header__top__icon">
+                                        <use xlink:href="img/sprite.svg#phone"></use>
+                                    </svg>
+                                    <a class="header__top__title" href="#">+7 (495) 150-77-97</a>
+                                </div>
+                                <div class="header__top__contacts">
+                                    <svg class="header__top__icon">
+                                        <use xlink:href="img/sprite.svg#mail"></use>
+                                    </svg>
+                                    <a class="header__top__title" href="#">zakaz@dsk-stolica.ru</a>
+                                </div>
+                            </div>
+                            <div class="menu__mobile__soc">
+                                <a class="menu__mobile__soc__link" href="#">
+                                    <svg class="menu__mobile__soc__link__icon">
+                                        <use xlink:href="img/sprite.svg#mobile-menu-vk"></use>
+                                    </svg>
+                                </a>
+                                <a class="menu__mobile__soc__link" href="#">
+                                    <svg class="menu__mobile__soc__link__icon">
+                                        <use xlink:href="img/sprite.svg#mobile-menu-insta"></use>
+                                    </svg>
+                                </a>
+                                <a class="menu__mobile__soc__link" href="#">
+                                    <svg class="menu__mobile__soc__link__icon">
+                                        <use xlink:href="img/sprite.svg#mobile-menu-facebook"></use>
+                                    </svg>
+                                </a>
+                                <a class="menu__mobile__soc__link" href="#">
+                                    <svg class="menu__mobile__soc__link__icon">
+                                        <use xlink:href="img/sprite.svg#mobile-menu-ok"></use>
+                                    </svg>
+                                </a>
+                                <a class="menu__mobile__soc__link" href="#">
+                                    <svg class="menu__mobile__soc__link__icon">
+                                        <use xlink:href="img/sprite.svg#mobile-menu-youtube"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="header__bottom-box">
+                        <div class="header__bottom__search">
+                            <button class="header__bottom__btn__catalog">
+                                <svg class="header__bottom__btn__icon">
+                                    <use xlink:href="img/sprite.svg#btncatalog"></use>
+                                </svg>Каталог ЖБИ</button>
+                            <form action="#" class="header__bottom__form">
+                                <input type="text" class="header__bottom__input" placeholder="Поиск">
+                                <button type="send" class="header__bottom__form__btn">Поиск</button>
+                            </form>
+                        </div>
+                        <div class="header__bottom__btn">
+                            <a class="header__btn__box" href="#">
+                                <svg class="header__btn__box__icon">
+                                    <use xlink:href="img/sprite.svg#person"></use>
+                                </svg>
+                                <div class="header__btn__box__title">Войти</div>
+                            </a>
+                            <a class="header__btn__box" href="#">
+                                <svg class="header__btn__box__icon">
+                                    <use xlink:href="img/sprite.svg#favorite"></use>
+                                </svg>
+                                <div class="header__btn__box__title">Избранное</div>
+                            </a>
+                            <a class="header__btn__box" href="#">
+                                <svg class="header__btn__box__icon">
+                                    <use xlink:href="img/sprite.svg#shopping"></use>
+                                </svg>
+                                <div class="header__btn__box__title">Корзина</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrums__list">
+                        <li class="breadcrums__list__items">
+                            <a class="breadcrumbs__list__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrums__list__items">
+                            <a class="breadcrumbs__list__link" href="#">Каталог товаров</a>
+                        </li>
+                        <li class="breadcrums__list__items">
+                            <a class="breadcrumbs__list__link" href="#">Частное домостроение</a>
+                        </li>
+                        <li class="breadcrums__list__items">
+                            <a class="breadcrumbs__list__link" href="#">Плиты перекрытия</a>
+                        </li>
+                        <li class="breadcrums__list__items">
+                            <a class="breadcrumbs__list__link" href="#">Плиты ПК</a>
+                        </li>
+                        <li class="breadcrums__list__items">
+                            <a class="breadcrumbs__list__link breadcrumbs__list__link_active" href="#">ПК 63-12-8</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cart">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="cart__title">Пк 63-12-8</h1>
+                    <div class="cart__vogue">
+                        <div class="cart__vogue__box">
+                            <svg class="cart__vogue__box__stars">
+                                <use xlink:href="img/sprite.svg#stars_bg"></use>
+                            </svg>
+                            <svg class="cart__vogue__box__stars">
+                                <use xlink:href="img/sprite.svg#stars_bg"></use>
+                            </svg>
+                            <svg class="cart__vogue__box__stars">
+                                <use xlink:href="img/sprite.svg#stars_bg"></use>
+                            </svg>
+                            <svg class="cart__vogue__box__stars">
+                                <use xlink:href="img/sprite.svg#stars_half"></use>
+                            </svg>
+                            <svg class="cart__vogue__box__stars">
+                                <use xlink:href="img/sprite.svg#stars_trans"></use>
+                            </svg>
+                        </div>
+                        <div class="cart__vogue__btn">
+                            <svg class="cart__vogue__btn__icon">
+                                <use xlink:href="img/sprite.svg#popular_product"></use>
+                            </svg>
+                            <p class="cart__vogue__btn__title">Популярный товар</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart__tabs">
+            <div class="container">
+                <div class="row cart__tabs__box">
+                    <div class="cart__tabs__items">
+                        <a class="cart__tabs__link cart__tabs__link_active" href="#">Все о товаре</a>
+                    </div>
+                    <div class="cart__tabs__items">
+                        <a class="cart__tabs__link" href="#">Характеристики</a>
+                    </div>
+                    <div class="cart__tabs__items">
+                        <a class="cart__tabs__link" href="#">Обзор и видео</a>
+                    </div>
+                    <div class="cart__tabs__items">
+                        <a class="cart__tabs__link" href="#">Доставка</a>
+                    </div>
+                    <div class="cart__tabs__items">
+                        <a class="cart__tabs__link" href="#">Отзывы</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-lg-1 cart__slider-prev">
+                    <div class="cart__slider-prev__items">
+                        <img class="cart__sliderprev__img" src="img/cart_product.jpg" alt="">
+                    </div>
+                    <div class="cart__slider-prev__items">
+                        <img class="cart__sliderprev__img" src="img/cart_product.jpg" alt="">
+                    </div>
+                    <div class="cart__slider-prev__items">
+                        <img class="cart__sliderprev__img" src="img/cart_product.jpg" alt="">
+                    </div>
+                    <div class="cart__slider-prev__items">
+                        <img class="cart__sliderprev__img" src="img/cart_product.jpg" alt="">
+                    </div>
+                    <div class="cart__slider-prev__items">
+                        <img class="cart__sliderprev__img" src="img/cart_product.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 cart__slider-img-product">
+                    <img class="cart__img" src="img/cart_product.jpg" alt="">
+                    <img class="cart__img" src="img/cart_product.jpg" alt="">
+                    <img class="cart__img" src="img/cart_product.jpg" alt="">
+                    <img class="cart__img" src="img/cart_product.jpg" alt="">
+                    <img class="cart__img" src="img/cart_product.jpg" alt="">
+                </div>
+                <div class="col-md-4 col-lg-3 cart__feature">
+                    <h3 class="cart__feature__title">Характеристики</h3>
+                    <p class="cart__feature__items">Наименование: <span>Плиты ПК</span></p>
+                    <p class="cart__feature__items">Завод-производитель: <span>Москва и МО</span></p>
+                    <p class="cart__feature__items">Технические условия: <span>ГОСТ 9561-91</span></p>
+                    <p class="cart__feature__items">Длина, мм: <span>6300</span></p>
+                    <p class="cart__feature__items">Ширина, мм: <span>1200</span></p>
+                    <p class="cart__feature__items">Высота, мм: <span>220</span></p>
+                    <p class="cart__feature__items">Расчетная нагрузка, кг/м²: <span>800</span></p>
+                    <p class="cart__feature__items">Вес 1 шт., т: <span>1,755</span></p>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="cart__boxorder">
+                        <div class="col-md-6 col-lg-12">
+                            <p class="cart__boxorder__price">484,00 ₽/шт.</p>
+                            <p class="cart__boxorder__pricesquare">154,88 ₽/м²</p>
+                            <p class="cart__boxorder__code">Артикул: <span>0543600</span></p>
+                        </div>
+                        <div class="col-md-6 col-lg-12">
+                            <form class="cartboxorder__form" action="#">
+                                <input class="cartboxorder__form__input" type="number" value="10">
+                                <button class="cartboxorder__form__btn" type="send">
+                                    <svg class="cartboxorder__form__btn__icon">
+                                        <use xlink:href="img/sprite.svg#card_basket"></use>
+                                    </svg>
+                                    <p class="cartboxorder__form__title">В корзину</p>
+                                </button>
+                            </form>
+                            <div class="cart__boxorder__buttons">
+                                <button class="cartboxorder__form__btn cartboxorder__form__btn_mr">
+                                    <svg class="cartboxorder__form__btn__icon">
+                                        <use xlink:href="img/sprite.svg#card_like"></use>
+                                    </svg>
+                                    <p class="cartboxorder__form__title">В избранное</p>
+                                </button>
+                                <button class="cartboxorder__form__btn cartboxorder__form__btn_green">
+                                    <svg class="cartboxorder__form__btn__icon">
+                                        <use xlink:href="img/sprite.svg#call_card"></use>
+                                    </svg>
+                                    <p class="cartboxorder__form__title">Позвонить</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card__boxorder__social">
+                                <p class="card__boxorder__social__desc">Также для вашего удобства мы доступны в мессенджерах</p>
+                                <div class="card__boxorder__social__box">
+                                    <a class="card__boxorder__social__box__link" href="#">
+                                        <img class="card__boxorder__social__box__img" src="img/card_WhatsApp.png" alt="">
+                                    </a>
+                                    <a class="card__boxorder__social__box__link" href="#">
+                                        <img class="card__boxorder__social__box__img" src="img/card_Viber.png" alt="">
+                                    </a>
+                                    <a class="card__boxorder__social__box__link" href="#">
+                                        <img class="card__boxorder__social__box__img" src="img/card_Telegram.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blunder">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="operating__box">
+                        <p class="operating__box__title">Получите расчёт вашей заявки по телефону!</p>
+                        <p class="operating__box__desc">Мы перезвоним в течение 24ч</p>
+                        <form class="operating__box__form" action="#">
+                            <input class="opereting__box__input" type="text" placeholder="+7 (___) ___-__-__*"></input>
+                            <button type="send" class="operating__box__btn">Получить консультацию</button>
+                        </form>
+                        <p class="operating__box__agreement">Нажимая на кнопку «Отправить заявку», вы даёте своё согласие на 
+                            <a href="#" class="operating__box__agreement__link">обработку персональных данных</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="drawing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="drawing__title">Нужна раскладка плит?</h1>
+                </div>
+                <div class="col-lg-6">
+                    <img class="drawing__img" src="img/drawing__img.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 drawing__desc">
+                    <p>Выполним раскладку плит перекрытий по Вашему чертежу или плану дома!</p>
+                    <p>Наши специалисты всегда рады помочь вам.</p>
+                    <p>Мы бесплатно по вашим чертежам нарисуем раскладку плит перекрытий, учтём все ваши пожелания и рекомендации по вашему проекту.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <button class="drawing__file">
+                        <svg class="drawing__file__icon">
+                            <use xlink:href="img/sprite.svg#drawing_file_icon"></use>
+                        </svg>
+                        <p class="drawing__file__title">Прикрепить чертеж</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stagesorder">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 stagesorder__items">
+                    <div class="stagesorder__items__circle">
+                        <svg class="stagesorder__items__circle__icon1">
+                            <use xlink:href="img/sprite.svg#stages_items_icon1"></use>
+                        </svg>
+                    </div>
+                    <div class="stagesorder__items__box">
+                        <h3 class="stagesorder__items__title">1. Оформите заказ</h3>
+                        <p class="stagesorder__items__desc">Заполните форму или позвоните  по указанным на сайте номерам телефонов</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 stagesorder__items">
+                    <div class="stagesorder__items__circle">
+                        <svg class="stagesorder__items__circle__icon2">
+                            <use xlink:href="img/sprite.svg#stages_items_icon2"></use>
+                        </svg>
+                    </div>
+                    <div class="stagesorder__items__box">
+                        <h3 class="stagesorder__items__title">2. Получите счёт на оплату</h3>
+                        <p class="stagesorder__items__desc">Средняя обработка заказов до часа! Обычно мы предоставляем от 1 до 3 выгодных предложений</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 stagesorder__items">
+                    <div class="stagesorder__items__circle">
+                        <svg class="stagesorder__items__circle__icon3">
+                            <use xlink:href="img/sprite.svg#stages_items_icon3"></use>
+                        </svg>
+                    </div>
+                    <div class="stagesorder__items__box">
+                        <h3 class="stagesorder__items__title">3. оплата в удобной форме</h3>
+                        <p class="stagesorder__items__desc">Возможны различные способы:  расчет наличными или перевод  на расчётный счет</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 stagesorder__items">
+                    <div class="stagesorder__items__circle">
+                        <svg class="stagesorder__items__circle__icon4">
+                            <use xlink:href="img/sprite.svg#stages_items_icon4"></use>
+                        </svg>
+                    </div>
+                    <div class="stagesorder__items__box">
+                        <h3 class="stagesorder__items__title">4. Доставка</h3>
+                        <p class="stagesorder__items__desc">Быстрая доставка  на ваш строительный объект. Круглосуточно, 7 дней в неделю</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="descorder">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-7 descorder__content">
+                    <h2 class="descorder__title">Описание</h2>
+                    <p>Плиты перекрытия железобетонные многопустотные ПК 90-12-8AтVта производятся согласно ГОСТ 9561-91 из тяжелого бетона классом В25 (М200), В35 (М300), легкого бетона плотной структуры и силикатного бетона с использованием предварительно напряженной арматуры. Представляют собой прямоугольную плиту, конструктивной особенностью которой является наличие многочисленных пустот круглой формы. Предназначенные для опирания по двум сторонам, плиты ПК применяются при строительстве многоэтажных зданий, зданий промышленного, административного и производственного назначения.</p>
+                    <p>Благодаря пустотам цилиндрической формы расположенным внутри панели, плиты ПК превосходят аналогичные ЖБИ плиты перекрытия многопустотного типа по ряду параметров:</p>
+                    <h3>Специфика маркировки</h3>
+                    <p>На завершающем этапе производственного процесса, многопустотная плита проходит процедуру маркировки. Ее суть заключается в нанесении на изделие буквенных и цифровых индексов, которые обозначают ее параметры. Сначала маркируется тип изделия, затем размеры, которые указываются в дм, и возможную нагрузку, кгс/м².</p>
+                    <div class="descorder__specifics">
+                        <div class="descorder__specifics__items">ПК</div>
+                        <div class="descorder__specifics__items">63</div>
+                        <div class="descorder__specifics__items">12</div>
+                        <div class="descorder__specifics__items">8</div>
+                    </div>
+                    <div class="descorder__box">
+                        <div class="descorder__box__items">
+                            <img class="descorder__box__items__img_1" src="img/line.png" alt="">
+                            <img class="descorder__box__items__img_2" src="img/line-2.png" alt="">
+                            <img class="descorder__box__items__img_3" src="img/line-3.png" alt="">
+                            <img class="descorder__box__items__img_4" src="img/line-4.png" alt="">
+                        </div>
+                        <div class="descorder__box__items">
+                            <p class="descorder__box__items__content">Допустимая нагрузка (<span>800 кг/м²</span>)</p>
+                            <p class="descorder__box__items__content">Ширина плиты (<span>1190 мм</span>)</p>
+                            <p class="descorder__box__items__content">Длина плиты (<span>5 980 мм</span>)</p>
+                            <p class="descorder__box__items__content">Плита канальная</p>
+                        </div>
+                    </div>
+                    <a class="descorder__link" href="#">Показать больше</a>
+                </div>
+                <div class="col-lg-4 descorder__about">
+                    <div class="about__col about__col_pb">
+                        <img class="about__video" src="img/about_video.jpg" alt="">
+                        <img class="about__pic-bg about__pic-bg_r25" src="img/about__pic-bg.png" alt="">
+                    </div>
+                    <div class="about__col about__col_pb100">
+                        <img class="about__video" src="img/order_video.jpg" alt="">
+                        <img class="about__pic-bg about__pic-bg_r25" src="img/about__pic-bg.png" alt="">
+                    </div>
+                    <div class="leavecomment leavecomment_col">
+                        <h3 class="leavecomment__title">Оставить комментарий</h3>
+                        <form action="#" class="leavecomment__form">
+                            <textarea class="leavecomment__form__text" name="comment" id="comment" cols="30" rows="10" placeholder="Текст отзыва*"></textarea>
+                            <button class="leavecomment__upload-file">
+                                <div class="leavecomment__upload-file__title">Прикрепить фото или файл</div>
+                                <svg class="leavecomment__upload-file__icon">
+                                    <use xlink:href="img/sprite.svg#clip"></use>
+                                </svg>
+                            </button>
+                            <div class="checked__box checked__box_leavecomment">
+                                <input type="checkbox" id="checked" name="checked" >
+                                <label class="application__checked application__checked_leavecomment" for="checked">Уведомлять об ответах по эл. почте</label>
+                            </div>
+                            <input type="send" class="comment__form__send" value="Оставить комментарий">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="popular-product__title">Избранное</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="popular-product__slider">
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="popular-product__title">Просмотренные</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="popular-product__slider">
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                        <div class="popular-product__box">
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                            <div class="popular-product__items">
+                                <img class="popular-product__items__pic" src="img/popular-product.jpg" alt="">
+                                <svg class="popular-product__items__like">
+                                    <use xlink:href="img/sprite.svg#like"></use>
+                                </svg>
+                                <a class="popolar-product__items__link" href="#">ПК 63-12-8</a>
+                                <p class="popular-product__items__price">от <span class="popular-product__items__price_bold">9 797</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="operating">
+        <div class="container">
+            <div class="row">
+                <div class="d-none d-md-none d-lg-block col-lg-4">
+                    <div class="operating__items">
+                        <p class="operating__items__title">Работаем 24/7</p>
+                        <p class="operating__items__desc">Получите консультацию от наших экспертов по телефону:</p>
+                        <a href="tel:+74951507797" class="operating__items__link">+7 (495) 150-77-97</a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="operating__box">
+                        <p class="operating__box__title">Нет времени искать нужный товар?</p>
+                        <p class="operating__box__desc">Получи консультацию по телефону!</p>
+                        <form class="operating__box__form" action="#">
+                            <input class="opereting__box__input" type="text" placeholder="+7 (___) ___-__-__*"></input>
+                            <button type="send" class="operating__box__btn">Получить консультацию</button>
+                        </form>
+                        <p class="operating__box__agreement">Нажимая на кнопку «Отправить заявку», вы даёте своё согласие на 
+                            <a href="#" class="operating__box__agreement__link">обработку персональных данных</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners partners_block-mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="partners__title">Нам доверяют</h2>
+                    <p class="partners__desc">Компании работающие с нами на постоянной основе</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="partners__slider">
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo.jpg" alt="">
+                        </div>
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo-2.jpg" alt="">
+                        </div>
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo-3.jpg" alt="">
+                        </div>
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo-4.jpg" alt="">
+                        </div>
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo-5.jpg" alt="">
+                        </div>
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo-6.jpg" alt="">
+                        </div>
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo.jpg" alt="">
+                        </div>
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo-2.jpg" alt="">
+                        </div>
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo-3.jpg" alt="">
+                        </div>
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo-4.jpg" alt="">
+                        </div>
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo-5.jpg" alt="">
+                        </div>
+                        <div class="partners__slider__items">
+                            <img class="partners__slider__img" src="img/partner__logo-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mobile__title">Заказывайте в нашем приложении!</h2>
+                    <div class="mobile__items">
+                        <div class="mobile__box">
+                            <a class="mobile__box__link" href="#">
+                                <img class="mobile__box__img" src="img/appstore.jpg" alt="">
+                            </a>
+                            <a class="mobile__box__link" href="#">
+                                <img class="mobile__box__img" src="img/googleplay.jpg" alt="">
+                            </a>
+                            <a class="mobile__box__link" href="#">
+                                <img class="mobile__box__img" src="img/appgallery.jpg" alt="">
+                            </a>
+                        </div>
+                        <img class="mobile__img mobile__img_mobile" src="img/telefon.png" alt="">
+                    </div>
+                    <p class="mobile__desc">Наведите камеруна QR-код, чтобы скачать</p>
+                </div>
+                <div class="d-md-none d-lg-block col-lg-6 d-flex justify-content-center">
+                    <img class="mobile__img" src="img/telefon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <img class="footer__logo" src="img/logo.svg" alt="">
+                    <p class="footer__icon-title">Мы в социальных сетях</p>
+                    <div class="footer__icon__box">
+                        <a class="footer__icon__link" href="#">
+                            <svg class="footer__social">
+                                <use xlink:href="img/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__icon__link" href="#">
+                            <svg class="footer__social">
+                                <use xlink:href="img/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__icon__link" href="#">
+                            <svg class="footer__social">
+                                <use xlink:href="img/sprite.svg#ok"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__icon__link" href="#">
+                            <svg class="footer__social">
+                                <use xlink:href="img/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="footer__icon-title">Принимаем к оплате</p>
+                    <div class="footer__icon__box">
+                        <a class="footer__icon__link" href="#">
+                            <svg class="footer__cardpay">
+                                <use xlink:href="img/sprite.svg#mastercard"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__icon__link" href="#">
+                            <svg class="footer__cardpay">
+                                <use xlink:href="img/sprite.svg#mir"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="footer__icon-title">Также мы доступны в мессенджерах</p>
+                    <div class="footer__icon__box">
+                        <a class="footer__icon__link" href="#">
+                            <svg class="footer__social">
+                                <use xlink:href="img/sprite.svg#whatsap"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__icon__link" href="#">
+                            <svg class="footer__social">
+                                <use xlink:href="img/sprite.svg#viber"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__icon__link" href="#">
+                            <svg class="footer__social">
+                                <use xlink:href="img/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 footer__pt-md">
+                    <div class="footer__title">Контакты</div>
+                    <div class="footer__info__box">
+                        <svg class="footer__info__box__icon">
+                            <use xlink:href="img/sprite.svg#location_on"></use>
+                        </svg>
+                        <p class="footer__info__box__desc">Москва, 109428, Проспект Рязанский, дом 30/15 этаж 8, офис 808, 807, 802</p>
+                    </div>
+                    <div class="footer__info__box">
+                        <svg class="footer__info__box__icon">
+                            <use xlink:href="img/sprite.svg#access_time"></use>
+                        </svg>
+                        <p class="footer__info__box__desc">Пн–Пт с 08:00 до 20:00<br/>по Московскому времени </p>
+                    </div>
+                    <div class="footer__info__box">
+                        <svg class="footer__info__box__icon">
+                            <use xlink:href="img/sprite.svg#phone_in_talk"></use>
+                        </svg>
+                        <div class="footer__info__box_tel">
+                            <a href="tel:8(800)3015570" class="footer__info__box__desc footer__info__box__desc_pb">8 (800) 301-55-70 <br/> бесплатно по РФ</a>
+                            <a href="+74951507797" class="footer__info__box__desc">+7 (495) 150-77-97 офис в Москве</a>
+                        </div>
+                    </div>
+                    <div class="footer__info__box">
+                        <svg class="footer__info__box__icon">
+                            <use xlink:href="img/sprite.svg#mail_outline"></use>
+                        </svg>
+                        <a href="mail:zakaz@dsk-stolica.ru" class="footer__info__box__desc">zakaz@dsk-stolica.ru</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 footer__pt-md">
+                    <div class="footer__title">Каталог</div>
+                    <ul class="footer__list">
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Частное домостроение</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Дорожное строительство</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Инженерное строительство</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Жилищное строительство</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Водопропускные трубы</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Промышленное строительство</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Железнодорожное строительство</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Промышленное строительство</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Энергетическое строительство</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Мостовые переходы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 footer__pt-md">
+                    <div class="footer__title">Компания</div>
+                    <ul class="footer__list">
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">О компании</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Новости</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Акции</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Отзывы клиентов</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Производство ЖБИ по индивидуальным чертежам заказчика</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Вакансии</a>
+                        </li>
+                        <li class="footer__list__items">
+                            <a class="footer__list__items__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 footer__bottom">
+                    <p class="footer__info">Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ч. 2 ст. 437 Гражданского кодекса Российской Федерации. Для получения подробной информации о стоимости и сроках выполнения услуг, пожалуйста, обращайтесь к менеджерам «ДСК-Столица».</p>
+                    <p class="footer__info">Любое копирование и использование материалов сайта ДСК-Столица разрешено только с активной ссылкой на первоисточник! Поставить прямую активную гиперссылку на оригинал в виде - Источник: https://dsk-stolica.ru</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-content-center footer_b">
+                    <p class="footer__copy">© ЗАО "ДСК-Столица" 2011–2021</p>
+                    <a class="footer__link" href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="application" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-notify modal-success" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                        <p class="heading lead">Заявка</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="sing-up__form" action="#">
+                            <label class="sing-up__form__title" for="">Ваше имя<span>*</span></label>
+                            <input class="sing-up__form__input sing-up__form__input_error" type="text" name="firstname" required>
+                            <p class="sing-up__form__error sing-up__form__error_block">Обязательное для заполнения поле!</p>
+                            <label class="sing-up__form__title" for="">Телефон<span>*</span></label>
+                            <input class="sing-up__form__input" type="tel" name="phone" required>
+                            <p class="sing-up__form__error">Обязательное для заполнения поле!</p>
+                            <div class="sing-up__form__checked">
+                                <input type="checkbox" id="checked" name="checked" >
+                                <label class="sing-up__form__checked__desc" for="checked">Даю своё согласие на обработку персональных данных</label>
+                            </div>
+                            <div class="sing-up__form__desc">Даю  <a class="sing-up__form__desc__link" href="#">согласие</a> на обработку моих персональных данных. С <a class="sing-up__form__desc__link" href="#">Политикой</a> в отношении обработки персональных данных ознакомлен и согласен.</div>
+                            <input class="sing-up__form__btn" type="send" value="Отправить заявку">
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="modal fade" id="productadd" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                        <p class="heading lead">Товар добавлен в корзину</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-lg-4">
+                                <img src="img/popular-product.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-8">
+                                <div class="modal-body__info">
+                                    <p class="modal-body__title">Ребристые плиты 1П</p>
+                                    <p class="modal-body__desc">1П 7-4-АIIIт</p>
+                                    <p class="modal-body__col">2 шт.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer__box">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-4">
+                                <p class="modal-footer__box__sum">Итого: <span>185 471 ₽</span></p>
+                            </div>
+                            <div class="col-lg-4">
+                                <button class="modal-footer__box__btn_trans">Продолжить покупки</button>
+                            </div>
+                            <div class="col-lg-4">
+                                <button class="modal-footer__box__btn">Перейти в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="modal modal-catalog" id="modalCatalog" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-3 col-lg-4 col-xl-3 modal-catalog__col">
+                            <img class="modal__logo" src="img/modal_logo.png" alt="">
+                            <div class="modal-catalog__box">
+                                <button class="modal-catalog__items modal-catalog__items_active" id="house">
+                                    <div class="modal-catalog__items__box">
+                                        <svg class="category__items__box__icon">
+                                            <use xlink:href="img/sprite.svg#private-house"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="modal-catalog__items__title">Частное домостроение</p>
+                                </button>
+                                <button class="modal-catalog__items" id="road">
+                                    <div class="modal-catalog__items__box">
+                                        <svg class="category__items__box__icon">
+                                            <use xlink:href="img/sprite.svg#road-building"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="modal-catalog__items__title">Дорожное строительство</p>
+                                </button>
+                                <button class="modal-catalog__items" id="engineeringconst">
+                                    <div class="modal-catalog__items__box">
+                                        <svg class="category__items__box__icon">
+                                            <use xlink:href="img/sprite.svg#engineer"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="modal-catalog__items__title">Инженерное строительство</p>
+                                </button>
+                                <button class="modal-catalog__items" id="housingconst">
+                                    <div class="modal-catalog__items__box">
+                                        <svg class="category__items__box__icon">
+                                            <use xlink:href="img/sprite.svg#office"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="modal-catalog__items__title">Жилищное строительство</p>
+                                </button>
+                                <button class="modal-catalog__items" id="pipes">
+                                    <div class="modal-catalog__items__box">
+                                        <svg class="category__items__box__icon">
+                                            <use xlink:href="img/sprite.svg#pipes"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="modal-catalog__items__title">Водопропускные трубы</p>
+                                </button>
+                                <button class="modal-catalog__items" id="industrialengineer">
+                                    <div class="modal-catalog__items__box">
+                                        <svg class="category__items__box__icon">
+                                            <use xlink:href="img/sprite.svg#Industrial"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="modal-catalog__items__title">Промышленное строительство</p>
+                                </button>
+                                <button class="modal-catalog__items" id="energyconst">
+                                    <div class="modal-catalog__items__box">
+                                        <svg class="category__items__box__icon">
+                                            <use xlink:href="img/sprite.svg#atomka"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="modal-catalog__items__title">Энергетическое строительство</p>
+                                </button>
+                                <button class="modal-catalog__items" id="railwayconst">
+                                    <div class="modal-catalog__items__box">
+                                        <svg class="category__items__box__icon">
+                                            <use xlink:href="img/sprite.svg#train"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="modal-catalog__items__title">Железнодорожное строительство</p>
+                                </button>
+                                <button class="modal-catalog__items" id="bridgecrossings">
+                                    <div class="modal-catalog__items__box">
+                                        <svg class="category__items__box__icon">
+                                            <use xlink:href="img/sprite.svg#bridge"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="modal-catalog__items__title">Мостовые переходы</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-9 col-lg-8 col-xl-9">
+                            <div class="modal-catalog__search">
+                                <form class="modal-catalog__search__form" action="#">
+                                    <input class="modal-catalog__search__input" type="text" placeholder="Поиск">
+                                    <button type="send" class="modal-search">
+                                        <svg class="modal-catalog__search__icon">
+                                            <use xlink:href="img/sprite.svg#modal-search"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                                <button class="modal-catalog__close">
+                                    <svg class="modal-catalog__close__icon">
+                                        <use xlink:href="img/sprite.svg#modal-close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="modal-catalog__content modal-catalog__content_active" id="1house">
+                                <h4 class="modal-catalog__content__title">Частное домостроение</h4>
+                                <div class="row modal-catalog__content__box">
+                                    <div class="col-lg-4 modal-catalog__content__items">
+                                        <h5 class="modal-catalog__content__items__title">Плиты перекрытия</h5>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                    </div>
+                                    <div class="col-lg-4 modal-catalog__content__items">
+                                        <h5 class="modal-catalog__content__items__title">Заборы ЖБИ</h5>
+                                        <a class="modal-catalog__content__items__link" href="#">Фундамент под забор</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Фундамент под забор</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Фундамент под забор</a>
+                                        <h5 class="modal-catalog__content__items__title modal-catalog__content__items__title_two">Лестничные марши</h5>
+                                        <a class="modal-catalog__content__items__link" href="#">Лестничная площадка</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Лестничная площадка</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Лестничная площадка</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Лестничная площадка</a>
+                                    </div>
+                                    <div class="col-lg-4 modal-catalog__content__items">
+                                        <h5 class="modal-catalog__content__items__title">Фундаментные блоки</h5>
+                                        <a class="modal-catalog__content__items__link" href="#">Усеченные блоки ФБС</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Усеченные блоки ФБС</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Усеченные блоки ФБС</a>
+                                        <h5 class="modal-catalog__content__items__title modal-catalog__content__items__title_two">Перемычки железобетонные</h5>
+                                        <a class="modal-catalog__content__items__link" href="#">Перемычки теплофикационных камер</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Перемычки теплофикационных камер</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Перемычки теплофикационных камер</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-catalog__content modal-catalog__content_active" id="1road">
+                                <h4 class="modal-catalog__content__title">Дорожное строительство</h4>
+                                <div class="row modal-catalog__content__box">
+                                    <div class="col-lg-4 modal-catalog__content__items">
+                                        <h5 class="modal-catalog__content__items__title">Плиты перекрытия</h5>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Плиты ПК</a>
+                                    </div>
+                                    <div class="col-lg-4 modal-catalog__content__items">
+                                        <h5 class="modal-catalog__content__items__title">Заборы ЖБИ</h5>
+                                        <a class="modal-catalog__content__items__link" href="#">Фундамент под забор</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Фундамент под забор</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Фундамент под забор</a>
+                                        <h5 class="modal-catalog__content__items__title modal-catalog__content__items__title_two">Лестничные марши</h5>
+                                        <a class="modal-catalog__content__items__link" href="#">Лестничная площадка</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Лестничная площадка</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Лестничная площадка</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Лестничная площадка</a>
+                                    </div>
+                                    <div class="col-lg-4 modal-catalog__content__items">
+                                        <h5 class="modal-catalog__content__items__title">Фундаментные блоки</h5>
+                                        <a class="modal-catalog__content__items__link" href="#">Усеченные блоки ФБС</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Усеченные блоки ФБС</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Усеченные блоки ФБС</a>
+                                        <h5 class="modal-catalog__content__items__title modal-catalog__content__items__title_two">Перемычки железобетонные</h5>
+                                        <a class="modal-catalog__content__items__link" href="#">Перемычки теплофикационных камер</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Перемычки теплофикационных камер</a>
+                                        <a class="modal-catalog__content__items__link" href="#">Перемычки теплофикационных камер</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
